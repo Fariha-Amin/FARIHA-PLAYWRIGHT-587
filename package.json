@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test textBox.spec.js --project=chromium --headed",
+    "test": "npx playwright test buildInLocators.spec.js --project=chromium",
+    "test:headed": "npx playwright test buildInLocators.spec.js --project=chromium --headed",
     "test:report": "npx playwright show-report",
-    "test:debug": "npx playwright test textBox.spec.js --project=chromium --headed --debug"
+    "test:debug": "npx playwright test buildInLocators.spec.js --project=chromium --headed --debug"
   },
   "keywords": [],
   "author": "",

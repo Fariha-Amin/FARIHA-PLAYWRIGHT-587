@@ -1,8 +1,6 @@
 const { test, expect} = require('@playwright/test');
-const { title } = require('../../constants/homePage');
-const { baseURL } = require('../../constants/urls');
 const { navList, elementList } = require('../../locators/homepage');
-//homepage validation related test cases
+//locating elements related test cases for practice
 test('Locating elements',async({page})=>{
       await page.goto('/login'); //uses the baseUrl automatically from config file
       const navOptions = await page.$$(navList);

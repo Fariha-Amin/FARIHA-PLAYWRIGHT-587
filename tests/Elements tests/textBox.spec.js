@@ -1,10 +1,8 @@
 const { test, expect} = require('@playwright/test');
-const { title } = require('../../constants/homePage');
-const { baseURL } = require('../../constants/urls');
 const { navList, elementList, elementTitle } = require('../../locators/homepage');
 const { userName, password, email, currentAddress, permanentAddress } = require('../../constants/textbox');
 const { userNameField, passswordField, emailField, currentAddressField, permanentAddressField } = require('../../locators/textBox');
-//homepage validation related test cases
+//textbox related test cases
 test('Locating elements',async({page})=>{
       await page.goto('/login'); //uses the baseUrl automatically from config file
       const navOptions = await page.$$(navList);
