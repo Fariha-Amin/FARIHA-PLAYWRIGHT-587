@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test homepageValidations.spec.js --project=chromium --headed",
+    "test:report": "npx playwright show-report",
+    "test:debug": "npx playwright test homepageValidations.spec.js --project=chromium --headed --debug"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
