@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test assertionsTests.spec.js --project=chromium",
-    "test:headed": "npx playwright test assertionsTests.spec.js --project=chromium --headed",
+    "test": "npx playwright test --project=chromium",
+    "test:spec": "npx playwright test radio_Checkbox.spec.js --project=chromium",
+    "test:headed": "npx playwright test --project=chromium --headed",
     "test:report": "npx playwright show-report",
-    "test:debug": "npx playwright test assertionsTests.spec.js --project=chromium --headed --debug",
+    "test:debug": "npx playwright test radio_Checkbox.spec.js --project=chromium --headed --debug",
     "test:codegen": "npx playwright codegen -o tests/codegen/practice.spec.js --target javascript --browser chromium --device \"iPhone 13\""
   },
   "keywords": [],

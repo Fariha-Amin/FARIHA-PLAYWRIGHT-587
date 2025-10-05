@@ -10,6 +10,9 @@ const { userName } = require('../../constants/textbox');
     //toHaveTitle
     await expect(page).toHaveTitle(title);
     const loginUsernameInputField = await page.locator(loginUsernameField);
+    //toBeEmpty
+    await expect(loginUsernameInputField).toBeEmpty();
+    await expect(loginUsernameInputField).toBeEditable();
     await loginUsernameInputField.fill(userName);
     //toHaveValue
     await expect(loginUsernameInputField).toHaveValue(userName);
