@@ -18,7 +18,7 @@ test('Home Page',async({page})=>{
       await expect(passwordField).toBeVisible();
 
       //getByText
-      const elementsOption = await page.getByText("Elements");
+      let elementsOption = await page.getByText("Elements");
       await expect(elementsOption).toBeVisible();
       await elementsOption.click();
 
